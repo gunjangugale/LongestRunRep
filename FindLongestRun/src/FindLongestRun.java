@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
  * Write a program to accept a nonempty string of alphanumeric characters. 
  * Define a “run” as a consecutive sequence of a single character. 
@@ -20,9 +22,16 @@ public class FindLongestRun {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Scanner scanner = new Scanner (System.in);
+		System.out.println("Enter the string : ");
+		String strin = scanner.next();
+		
+		String strout = LongestRun(strin);
+		System.out.println("longest run is : " + strout);
+		scanner.close();
 	}
 	
-	public static String LongestRun()
+	public static String LongestRun(String strin)
 	{
 		return null;
 		
